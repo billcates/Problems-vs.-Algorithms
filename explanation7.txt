@@ -1,0 +1,35 @@
+HTTP Router using a Trie:
+     The program  uses a Trie data structure to build a framework for a HTTP Router with
+     response handlers in the form of strings. The key data structure used in the Trie here
+     is a Python dictionary. The dictionary contains keys which link to a node’s descendant nodes.
+     Python dictionaries are dynamic, so a given node in the Trie can have a variable number of keys
+     and hence descendant nodes.
+     The path “/“ will always return “root handler”.
+
+
+Time and Complexity Analysis
+    For the class RouteTrieNode:
+      The insert method’s time and space complexity are both O(1).
+      This is because the insert method always inserts a single node to the Trie
+    For the class class RouteTrie:
+      #The insert’s method time and space complexity are both O(n), where n is the number path pieces in the url.
+       The insert loops through a list of piece strings . The method then has O(n) time complexity.
+       Since the insert method can potentially add n new nodes to the Trie, its space complexity is also O(n).
+
+      #The find’s method time complexity is O(n) (n as defined above).
+       Like the insert method, the find method starts at the root of the Trie attempting to the match the list of piece strings
+       A full match then requires a time complexity of O(n).
+       Since the find method internal workings do not scale with the size of the piece strings list its space complexity is O(1).
+
+    For the class Router:
+    -The add_handler’s method time and space complexity are both O(n) (n as defined above).
+    This follows from the add_handler directly calling the RouteTrie's insert method.
+    -The lookup method’s time complexity is O(n) (n as defined above). The space complexity is O(1).
+     This follows from the lookup directly calling the RouteTrie's find method.
+
+    Split method:
+     The split_path’s method time and space complexity are both O(n) (n as defined above).
+     The split_path is a helper method which takes a url and returns a list of path pieces.
+     The split_path calls the Python method split("/") on the url yielding the required list.
+     The time complexity is then O(n)
+     Since the split_method's internal workings do not scale with the size of the piece strings list its space complexity is O(1).

@@ -1,0 +1,10 @@
+Max and Min in a Unsorted Array:
+    The code must run in O(n).In a single traversal each element is checked whether
+    it is the minimal element or the maximal element,by using extra two variables
+    and initially they were set to 0,by comparing the value changes and finally ,
+    we get the minimal and maximal value.
+Time Complexity:
+  O(n)
+Space Complexity:
+  since the same number variables are used, independent of the input array,
+  the space complexity is O(1).

@@ -1,0 +1,19 @@
+Search in a Rotated Sorted Array:
+  #The array given is sorted but, has been changed at some point,we can make that point as
+   pivot  and do our binary search in the left part and if found return the values
+   else binary search in right part and if not found return -1.
+
+  #The pivot is found by iteratively comparing with the start and end ,finding midpoint
+   and if the start is less than the end value,which means the start is the pivot
+   and it is returned ,when value is lesser than mid value,set start=mid+1,else set end=midpoint
+
+  #the array is split into two,by performing binary search we can find the values
+  and if value is not found return -1
+
+Time Complexity:
+  The pivot itself is found using a divide and conquer algorithm.
+  That the pivot could be found using a divide and conquer strategy is somewhat surprising.
+  Since finding the pivot and each of the two binary searches are all O(log n),
+  the overall performance of the algorithm is O(log n) as required.
+Space Complexity:
+  Since,the array uses iterative method,the Space complexity is O(1)

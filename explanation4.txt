@@ -1,0 +1,14 @@
+Dutch National Flag Problem
+   The idea is to solve the problem using a single traversal.
+   By swapping 0 and 2 nodes the 1 nodes will come in position automatically.
+   Make front_index and next_pos_2 as variables and when 0 is found swap that value and add it
+   in front,increment the front_index and the value in that node was put in the other node and if the value is
+   2 decrement the next_pos_2 add it to the next_pos_2,By doing this we can achieve
+   the whole list sorted.
+
+Time Complexity:
+   The sorting is accomplished in a single pass therefore time complexity is O(n).
+
+Space Complexity:
+   Since the variabales are always the same ,it is independent of the input array
+   The Space Complexity is O(1)

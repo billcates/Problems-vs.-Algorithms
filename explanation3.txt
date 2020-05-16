@@ -1,0 +1,17 @@
+Rearrange Array Elements:
+ The algorithm firsts sorts the list elements using a Merge Sort but, it sorts in
+ reversed order (i.e)descending order.
+ The Merge Sort was chosen as it always has O(nlogn) complexity.
+ The expected time complexity is then O(nlogn).
+ The Rearrange method then uses a greedy approach to build the two lists
+ by alternatively placing elements into the two lists.If the element is odd it is
+ placed in one list and if the element is even,in other,inorder to maintain a maximum
+ difference of digits which is 1.
+
+ Time Complexity:
+   Merge sort=>O(nlogn)
+   n nodes are iterated to form two digits=>O(n)
+   Overall is O(n log n)
+Space Complexity:
+  mergesort n nodes + two digits variables +auxilary
+  makes overall O(n)

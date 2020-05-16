@@ -1,0 +1,14 @@
+Building A Trie in Python.ipynb
+      For the Trie class, besides the constructor, an insert and exist methods are both implemented.
+      An array of diverse test strings, including Null and empty strings, are tested for the Trie class in the Jupyter notebook submission.
+      For the Finding Suffixes, a recursive helper function is used to return a list of all complete words with a given prefix.
+      This list is then filtered by the actual suffixes function to return a list with the suffix stripped from the words.
+      An extensive word list with common prefixes is tested via the supplied Udacity widget code.
+
+Time Complexity:
+  The time complexity of looking data up in a Trie is O(m)
+  (where m is the length of a search string)
+
+Space Complexity:
+  The space complexity of trie seems to be: O(ALPHABET_SIZE * key_length * N)
+  where N is number of keys in Trie.
